@@ -29,9 +29,9 @@ function shuffle(array) {
 
   for(var file of files) {
     var author = file[0];
-    var images = files[1];
+    var images = file[1];
 
-    for(var image of files[1]) {
+    for(var image of images) {
 
       files_all.push([author,image]);
       
