@@ -40,6 +40,6 @@ function shuffle(array) {
   }
   shuffle(files_all);
   var html_full = "";
-  for(var file of files_all) html_full += `<tr><td>By: {file[0]}</td><td><img src="{file[1]}"></td></tr>`;
+  for(var file of files_all) html_full += `<tr><td>By: ${file[0]}</td><td><img src="${file[1]}"></td></tr>`;
   document.getElementById("pictures").innerHTML = html_full;
 })();
