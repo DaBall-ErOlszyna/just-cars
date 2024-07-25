@@ -1,6 +1,6 @@
 
 async function get_files() {
-  return JSON.parse(await (await fetch("images.json")).json());
+  return await (await fetch("images.json")).json();
 }
 
 function shuffle(array) {
